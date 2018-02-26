@@ -3,15 +3,16 @@ import javax.swing.JOptionPane;
 
 public class operacion1
 {
-   
-        int a = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingresar número 1"));
-        int b = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingresar número 2"));
+
+	
         int resta;
         int suma;
+        App ap = new App();
         
-     int realizarresta() {
-            if (a>b) {
-            resta= (a - b);
+        
+     public int realizarresta() {
+            if (ap.a>ap.b) {
+            resta= (ap.a- ap.b);
     			
     		}else {
     			JOptionPane.showMessageDialog(null, "La operación no se puede realizar");
@@ -20,7 +21,7 @@ public class operacion1
         }
      
      public int realizarsuma() {
-    	 suma= (a+b);
+    	 suma= (ap.a+ap.b);
     	 return suma;
      }
         }

@@ -5,16 +5,16 @@ import javax.swing.JOptionPane;
 
 public class Operacion2 {
 	
-	int a=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese  número 1"));
-	int b=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese  número 2"));
+	
 	int division;
 	int multiplicacion;
 
+	App ap = new App();
 	
 	public int hacermmultiplicacion() {
     
 				
-		  multiplicacion= a *b ;
+		  multiplicacion= ap.a * ap.b;
 		
 		
 		return multiplicacion;
@@ -24,11 +24,11 @@ public class Operacion2 {
 	
 	public int hacerdivision() {
 		
-		if(a>b) {
+		if(ap.a> ap.b) {
 			
 		
 			
-			division = a/b ;
+			division = ap.a/ap.b ;
 			
 		} else
 		{
