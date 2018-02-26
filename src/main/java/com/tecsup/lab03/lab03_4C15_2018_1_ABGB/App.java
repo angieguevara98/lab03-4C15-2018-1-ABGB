@@ -1,13 +1,14 @@
 package com.tecsup.lab03.lab03_4C15_2018_1_ABGB;
 
-/**
- * Hello world!
- *
- */
+import javax.swing.JOptionPane;
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        operacion1 operaciones = new operacion1();
+        JOptionPane.showMessageDialog(null, "La resta es : " + operaciones.realizarresta());
+        JOptionPane.showMessageDialog(null, "La suma es : " + operaciones.realizarsuma());
+        
+        
     }
 }
